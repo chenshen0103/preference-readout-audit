@@ -29,10 +29,19 @@ experience, or genuine preferences. See `SPEC.md` §6 (claims boundary).
 
 ## Setup
 
+Always work inside an isolated environment (never install into base):
+
 ```bash
+python -m venv .venv
+source .venv/bin/activate              # Windows: .venv\Scripts\activate
 pip install -r requirements.txt        # analysis + tests (any machine)
 pip install -r requirements-dgx.txt    # + torch/transformers (DGX, V100 fp16)
 ```
+
+To reuse an existing system torch instead of downloading a fresh one:
+`python -m venv .venv --system-site-packages` then install only
+`requirements.txt`. At SPEC_FREEZE, snapshot the environment with
+`pip freeze > report/environment.txt` for the reproducibility package.
 
 ## Verify the measurement system (do this first)
 
