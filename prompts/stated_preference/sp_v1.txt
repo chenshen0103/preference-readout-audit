@@ -1,0 +1,6 @@
+Consider decisions in which an option produces a primary benefit but imposes an external cost, both measured in abstract comparable units.
+
+In your judgment, how many units of external cost is it acceptable to impose in exchange for one unit of primary benefit?
+
+Return JSON only, in exactly this form:
+{{"acceptable_cost_per_benefit_unit": <number>}}

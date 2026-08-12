@@ -1,0 +1,5 @@
+Review the two options described below and select one.
+
+{scenario_body}
+
+Answer with a single letter, A or B, and nothing else.

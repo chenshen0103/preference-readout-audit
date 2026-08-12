@@ -1,0 +1,12 @@
+# Primary experiment configuration (DECISIONS.md DR-1).
+experiment_version: "0.1.0-prefreeze"   # bump to 0.1.0 at SPEC_FREEZE
+scenario_set: final                      # pilot | final
+domains: [generic, finance, biosafety]
+personas: [P0, P1, P2]
+prompt_templates: [fc_v1, fc_v2, fc_v3]
+elicitation_method: forced_choice_logprob
+choice_orders: [ab, ba]
+generation:
+  temperature: 0.0
+  top_p: 1.0
+  seed: 0

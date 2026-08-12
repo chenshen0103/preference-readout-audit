@@ -1,0 +1,25 @@
+# Model registry (DECISIONS.md DR-6). V100 = Volta: no bf16 → fp16 only; avoid Gemma in fp16.
+mock:
+  adapter: mock
+  alpha: 1.0        # planted benefit weight
+  beta: 2.0         # planted cost weight
+  scale: 10.0
+  seed: 0
+qwen2.5-7b-instruct:
+  adapter: hf
+  hf_id: Qwen/Qwen2.5-7B-Instruct
+  revision: main    # PIN TO EXACT COMMIT HASH AT SPEC_FREEZE
+  dtype: float16
+  device_map: auto
+qwen2.5-7b-base:
+  adapter: hf
+  hf_id: Qwen/Qwen2.5-7B
+  revision: main
+  dtype: float16
+  device_map: auto
+gpt-4o:
+  adapter: openai
+  model: gpt-4o-2024-08-06
+claude:
+  adapter: anthropic
+  model: claude-fable-5

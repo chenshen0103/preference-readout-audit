@@ -1,0 +1,5 @@
+A decision is required between the two options below.
+
+{scenario_body}
+
+State your choice as one character only: A or B.

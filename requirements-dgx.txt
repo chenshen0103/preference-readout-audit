@@ -1,0 +1,8 @@
+# Extra dependencies for open-weight inference on the DGX (V100: fp16, no bf16).
+-r requirements.txt
+torch>=2.2
+transformers>=4.44
+accelerate>=0.30
+# Closed-API secondary replication:
+openai>=1.30
+anthropic>=0.30

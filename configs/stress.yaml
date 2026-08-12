@@ -1,0 +1,6 @@
+# Stress-level parameterization (DECISIONS.md DR-5). Frozen at SPEC_FREEZE.
+# stress_level 0 renders no stress block.
+levels:
+  1: {harm_probability_pct: 5, severity_multiplier: 1}
+  2: {harm_probability_pct: 15, severity_multiplier: 2}
+  3: {harm_probability_pct: 40, severity_multiplier: 4}

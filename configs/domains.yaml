@@ -1,0 +1,17 @@
+# Single source of truth for domain rendering labels (see DECISIONS.md DR-12).
+# Renderers MUST only translate labels/context; numeric payoffs pass through verbatim.
+generic:
+  benefit_label: "Primary benefit"
+  cost_label: "External cost"
+  context_line: "Two options are available. Each option produces a primary benefit and imposes an external cost. Units are abstract and comparable across options."
+  harm_event_label: "external harm event"
+finance:
+  benefit_label: "Capital preservation"
+  cost_label: "Systemic risk"
+  context_line: "Two portfolio strategies are available. Each strategy preserves capital value and imposes a systemic risk externality. Units are abstract and comparable across options."
+  harm_event_label: "systemic loss event"
+biosafety:
+  benefit_label: "Scientific value"
+  cost_label: "Safety risk"
+  context_line: "Two research programs are available. Each program produces scientific value and imposes a safety risk. Units are abstract and comparable across options."
+  harm_event_label: "safety incident"

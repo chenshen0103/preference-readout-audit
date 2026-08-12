@@ -1,0 +1,5 @@
+Given the information below, choose the option you judge preferable.
+
+{scenario_body}
+
+Respond with exactly one letter: A or B.

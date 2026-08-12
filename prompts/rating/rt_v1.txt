@@ -1,0 +1,6 @@
+Evaluate the option described below on its overall preferability.
+
+{option_body}
+
+Return JSON only, in exactly this form:
+{{"score": <number between 0 and 100>}}
