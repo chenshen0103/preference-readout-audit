@@ -1,77 +1,87 @@
-# PressureTest
+# Check the Ruler First: Auditing Behavioral and Internal Preference Readouts
 
-**When Is an AI Preference Really the Same Preference?**
-Testing preference measurement invariance across domain, persona, elicitation
-method, and stress transformations.
+Submission repository — **Digital Minds Research Sprint (Apart Research), Track 4:
+Preference Elicitation Methods**. Paper: [`report/template.md`](report/template.md).
 
-Built for the Apart Research **Digital Minds Research Sprint** (2026-08-14/16).
-Primary track: Track 4 — Preference Elicitation Methods.
+We audit two instruments used to study AI preferences — a public pairwise-choice
+utility pipeline and layerwise readouts of `google/gemma-4-31B-it` — and show
+that both can produce persuasive numbers after their validity has failed.
 
-## What this is
+## Reproduce the core result in one command (no GPU)
 
-A controlled, reproducible measurement system: one abstract payoff structure is
-rendered into semantically different but mathematically isomorphic domains
-(generic / finance / biosafety), under different personas, prompt templates,
-A/B orders, and stress levels. We fit decision boundaries and ask whether the
-inferred trade-off structure is invariant.
+> Near the elicited indifference boundary, **every answer in the 22
+> order-discordant paired conditions selected the second-listed option (44/44)**
+> — the default follows physical position (21/24 under layout reversal) and is
+> not specific to the letter "B" (13/14 under X/Y labels).
 
-This project does **not** claim anything about AI consciousness, subjective
-experience, or genuine preferences. See `SPEC.md` §6 (claims boundary).
+```bash
+git clone https://github.com/chenshen0103/PressureTest.git && cd PressureTest
+python3 scripts/reproduce_core_result.py
+```
 
-## Governance documents
+Python ≥3.8 standard library only, runs in seconds. It recomputes the claim
+from the committed per-condition records (raw final-layer logit margins of
+gemma-4-31B-it) and exits 0 with `PASS` only if every number matches the paper.
 
-| File | Purpose |
+## Browse all results (no GPU, no install)
+
+The executed notebook has every figure and printed number embedded — open it on
+GitHub directly: [`notebooks/preference_measurement_validity.ipynb`](notebooks/preference_measurement_validity.ipynb).
+To re-run it (only `numpy` + `matplotlib` needed):
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install numpy matplotlib jupyter
+.venv/bin/jupyter lab notebooks/preference_measurement_validity.ipynb
+```
+
+A self-contained copy (notebook + data + the 18 experiment scripts, 1.5 MB) is
+`notebooks/preference_measurement_validity_bundle.zip`.
+
+## Full regeneration from the model (GPU)
+
+The committed records were produced on 3–4× Tesla V100-32GB. Always work in an
+isolated venv (never install into base):
+
+```bash
+python3 -m venv .venv --system-site-packages && source .venv/bin/activate
+pip install torch transformers nnsight            # fp16; V100 has no bf16
+python - <<'PY'                                   # pulls ~62 GB of weights
+from huggingface_hub import snapshot_download
+snapshot_download("google/gemma-4-31B-it",
+                  revision="842da3794eaa0b77d5f08bae87a17459d91ff475")
+PY
+# core behavioral sweeps behind the 44/44 result (~30 min total):
+CUDA_VISIBLE_DEVICES=0,2,3 python analysis/boundary_sweep.py
+CUDA_VISIBLE_DEVICES=0,2,3 python analysis/veto_tests.py
+CUDA_VISIBLE_DEVICES=0,2,3 python analysis/dilemma_sweep.py
+CUDA_VISIBLE_DEVICES=0,2,3 python analysis/pilot_geo.py
+python3 scripts/reproduce_core_result.py          # re-verify from fresh records
+```
+
+The mechanistic battery (probe + lens controls) is
+`analysis/validity_diagnostics.py` → `probe_transfer_fixed.py` →
+`trajectory_controls.py`; each script's header documents its exact command.
+Figures: `python analysis/make_figures.py`. Full details: paper Appendix H and
+[`report/gemma4_readout_validity.md`](report/gemma4_readout_validity.md).
+
+## Repository map
+
+| path | contents |
 |---|---|
-| `SPEC.md` | Authoritative research/implementation spec (v0.1) |
-| `DECISIONS.md` | Resolved ambiguities and amendments (DR-1 …) |
-| `OPEN_QUESTIONS.md` | Items requiring team decision before freeze |
-| `SPEC_FREEZE.md` | Freeze checklist — main experiment must not start until frozen |
+| `report/template.md` | **the paper** (with appendix) |
+| `report/figures/`, `report/data/` | figures; behavioral-validation data + scripts |
+| `analysis/` | experiment scripts and their saved outputs (raw residual tensors are gitignored — regenerable) |
+| `notebooks/` | executed results notebook + shareable bundle |
+| `scripts/reproduce_core_result.py` | one-command core-result verification |
+| `analysis/jspace/` | J-lens pilot kit (lens-transfer verdict; own README) |
+| `EMERGENT_VALUES_PRIMER.md`, `report/prior_work_validation.md` | audit of the upstream utility pipeline (commit `5e5966d`) |
 
-## Setup
+## Pre-sprint scaffold (historical)
 
-Always work inside an isolated environment (never install into base):
-
-```bash
-python -m venv .venv
-source .venv/bin/activate              # Windows: .venv\Scripts\activate
-pip install -r requirements.txt        # analysis + tests (any machine)
-pip install -r requirements-dgx.txt    # + torch/transformers (DGX, V100 fp16)
-```
-
-To reuse an existing system torch instead of downloading a fresh one:
-`python -m venv .venv --system-site-packages` then install only
-`requirements.txt`. At SPEC_FREEZE, snapshot the environment with
-`pip freeze > report/environment.txt` for the reproducibility package.
-
-## Verify the measurement system (do this first)
-
-```bash
-python -m pytest tests/ -q
-```
-
-24 tests: renderer numeric integrity (T1/SC5), A/B swap (T2), biosafety
-blocklist (T3), deterministic IDs (T4/T5/T9), strict parsing (T6/T7),
-dominance labels (T8), pilot/final separation (T10), runner resume (§43), and
-**V1 planted-preference recovery**: a mock model with a known utility function
-(β/α = 2.0) is run through the *entire* pipeline and the analysis must recover
-the planted parameter exactly. This is the end-to-end guarantee that the
-measurement chain does not distort results.
-
-## Run the pilot (mock locally, real model on the DGX)
-
-```bash
-python -m runners.single --model mock --domain generic --persona P0
-```
-
-Full pilot / primary runs are driven from `runners/batch.py` (resumable,
-append-only JSONL keyed by deterministic trial IDs — safe to interrupt).
-
-## Face-validity review (before freeze, SPEC §34)
-
-```bash
-python scripts/make_review_sheet.py > report/review_sheet.md
-```
-
-## Repository layout
-
-See `SPEC.md` §40. Deviations are documented in `DECISIONS.md` DR-12.
+The original controlled measurement system built before the sprint pivot —
+spec (`SPEC.md`), decisions (`DECISIONS.md`), renderers, deterministic scenario
+generator, and its 24-test suite (`python -m pytest tests/ -q`, includes the
+planted-preference recovery test V1) — remains in place and passing. The sprint
+work above reuses its guardrails (claims boundary SPEC §6, anti-hallucination
+§47) rather than its factorial design, which was not completed in the sprint
+window; see paper §5 Limitations.
