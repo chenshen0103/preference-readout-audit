@@ -13,17 +13,21 @@ broken.
 **Tool 1: asking the model questions.** We tested the public pipeline from the
 *Utility Engineering* paper (Mazeika et al., 2025), which shows a model two
 outcomes at a time, asks "which do you prefer, A or B?", and turns thousands of
-answers into a preference score per outcome. The math is sound: when we fed it
-a fake model with known preferences, it recovered them almost perfectly. But
-the machinery around the math is fragile. Its most dangerous failure: when a
-model's answers cannot be read at all, every unreadable answer is silently
-counted as a tie, and the pipeline reports success. A run in which *every
-single answer was unreadable* looked exactly like a normal result.
+answers into a preference score per outcome. Near indifference, all 44 answers
+from 22 pairs that disagreed across content order chose the second-listed
+option. Layout reversal, answer relabeling, and independent everyday scenarios
+show that this is a positional default, while the pipeline's standard pooling
+can hide the disagreement inside an apparently coherent estimate. The estimator
+itself is sound: when fed a fake model with known preferences, it recovered them
+almost perfectly. But its surrounding machinery is fragile. When a model's
+answers cannot be read at all, every unreadable answer is silently counted as a
+tie, and the pipeline reports success; one all-unreadable run looked normal.
 
 **Tool 2: reading the decision from inside the model.** For Gemma 4 (31B), we
 tried the standard trick of reading the model's tentative answer at every
-internal processing step. Three checks showed the numbers this produces are
-mostly noise. Yet the information is genuinely there: a simple classifier can
+internal processing step. Three checks showed that the resulting trajectories
+were non-diagnostic template/token artifacts, not random noise. Yet the
+information is genuinely there: a simple classifier can
 read the upcoming choice from the model's internal activity about two-thirds
 of the way through the network — some 20 steps before the standard trick sees
 anything. The decision exists internally in a general form first, and is only
@@ -73,7 +77,7 @@ scales (Figure 1a). The scoring method deserves reuse.
 *Figure 1. (a) Fed a fake model with known preferences, the pipeline recovers
 them almost perfectly. (b) How much scores move when nothing changes (blue)
 versus when one real thing changes (orange) — the deliberation effect is 8×
-the total noise floor. Note the log scale.*
+the behavioral repeatability floor. Note the log scale.*
 
 ### 2.3 Four ways it fails without telling you
 
@@ -109,14 +113,16 @@ changes. On an 8-outcome test set (28 pair comparisons), two identical runs:
 | only the pipeline's internal randomness | 0.014 | 0 of 28 |
 | plus answer sampling (10 samples per question) | 0.054 | 0 of 28 |
 
-That is the noise floor. Any claimed effect smaller than this is not a finding.
+That is the behavioral pipeline's repeatability floor. Any claimed effect
+smaller than this is not a finding.
 
 ### 2.5 A pilot: letting the model think first changes its answers
 
 Same model, same questions — but in one condition the model answers instantly,
 in the other it reasons privately before answering. The scores moved by up to
 0.43 (comparing the deliberation run against the average of the two
-instant-answer runs; Figure 1b), which is **8× the noise floor**, and one
+instant-answer runs; Figure 1b), which is **8× the behavioral repeatability
+floor**, and one
 ranking flipped (money rose,
 pleasant experiences fell). This is a small pilot on easy questions, with a
 caveat (about 10% of "thinking" answers were unreadable), so we report it as a
@@ -263,7 +269,7 @@ tested on questions *and* answer letters never seen in training; "margin
 corr" = correlation of a separate regression's prediction with the model's
 final answer strength):
 
-| layers (of 60) | within-CV acc | transfer acc (leak-free) | margin corr |
+| layers (of 60) | within-CV acc | scenario- and label-held-out transfer acc | margin corr |
 |---|---:|---:|---:|
 | 0–24 | 0.54 | 0.53 | +0.12 |
 | 28 | 0.64 | 0.60 | +0.40 |
@@ -291,17 +297,15 @@ Two findings:
    general form (layers 36–57) is precisely the window the standard readout
    cannot see.
 
-One honest correction from our own process: our first version of this test
-leaked (the same questions appeared in training and test with different
-labels) and showed impossibly good numbers. The table above is from the fixed
-version. We kept the mistake in the record because it is exactly the kind of
-error this report is about.
+The reported transfer evaluation holds out both the scenarios and the entire
+answer-label set. An earlier exploratory split that allowed scenario overlap
+was discarded; no result in the table uses that split.
 
 ### 3.4 What we did *not* find
 
 We found no valid evidence about *how* the decision forms across layers — no
 "hesitation," no "changing its mind." Our earlier curves suggesting such
-dynamics were noise, and we withdraw them. Layers are processing steps, not
+dynamics were non-diagnostic template/token artifacts, and we withdraw them. Layers are processing steps, not
 moments in time, and nothing here supports claims about experience,
 deliberation, or genuine preference (see our project's claims boundary,
 SPEC §6).
@@ -318,7 +322,7 @@ For anyone measuring model preferences with question-asking pipelines:
 3. **Report order bias instead of only canceling it.** The per-order answers
    are already saved; analyze them.
 4. **Report model-guess data separately from real answers.**
-5. **Measure your noise floor first** — two identical runs — and report
+5. **Measure behavioral repeatability first** — two identical runs — and report
    effects in multiples of it.
 
 For anyone reading decisions from inside a model:

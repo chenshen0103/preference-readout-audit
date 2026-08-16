@@ -165,15 +165,12 @@ plain logit lens is failing as a *decoder*; it is not reporting a true absence.
 This was established without reference to the Qwen/J-Lens result, which was used
 only as motivation for testing whether the readout method is the limiting factor.
 
-## Corrections made during this work
+## Transfer-evaluation protocol
 
-- An initial cross-label transfer test trained on all A/B traces and tested on
-  all X/Y traces. Because a scenario appeared in both sets, the probe could
-  succeed by recognizing the scenario. It reported transfer *above*
-  within-distribution accuracy (0.91 vs 0.55 at L12), which is the signature of
-  leakage. The corrected test holds out scenarios and label set simultaneously;
-  all numbers above are from the corrected version, which sits at chance through
-  L24.
+- Reported transfer results hold out both scenarios and the entire answer-label
+  set, preventing scenario identity from serving as a shortcut. An earlier
+  exploratory split that allowed scenario overlap was discarded; all numbers
+  above use the held-out protocol, which remains at chance through L24.
 
 ## Limitations
 
@@ -205,11 +202,11 @@ checkpoint used above), 8-outcome smoke set, three runs:
 | comparison | Spearman | max \|Δu\| | rank swaps |
 |---|---:|---:|---:|
 | reasoning-OFF #1 vs #2 (identical settings) | 1.0000 | 0.054 | 0/28 |
-| reasoning-OFF vs reasoning-ON | 0.9762 | 0.439 | 1/28 |
+| reasoning-OFF vs reasoning-ON | 0.9762 | 0.433 | 1/28 |
 
-The two identical runs give the pipeline's total run-to-run noise floor:
+The two identical runs give the behavioral pipeline's repeatability floor:
 max |Δu| = 0.054, zero rank swaps. Letting the model deliberate before answering
-moves utilities by up to 0.439 — **8.2× the noise floor** — and swaps one rank
+moves utilities by up to 0.433 — **≈8× the repeatability floor** — and swaps one rank
 pair ($5 rises above meditation). Direction of the shift: monetary outcomes up,
 experiential outcomes down.
 

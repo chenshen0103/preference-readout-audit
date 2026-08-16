@@ -59,7 +59,7 @@ is worth buying, B otherwise.`
 **P4 — deliberation condition:** identical to P1; the only change is enabling
 the model's internal thinking mode (400-token budget).
 
-## B. Estimator validation and noise floor
+## B. Estimator validation and behavioral repeatability floor
 
 *Figure A1 — `report/figures/fig1_estimator_noise.png`*
 **Caption:** (a) A synthetic agent with known ("planted") utilities is run
@@ -68,8 +68,10 @@ the planted ones at Spearman ρ = 0.993 (N = 40; ρ ≈ 0.99 also at N = 120 and
 200). (b) Largest change in any utility score (log scale) when nothing
 changes — estimator randomness only (0.014), plus answer sampling at K = 10
 (0.054) — versus one real manipulation, enabling deliberation before
-answering (0.433 ≈ 8× the floor). Zero rank swaps within identical settings
-(0/28 pairs); one rank swap under deliberation.
+answering (0.433 ≈ 8× the floor). Here “floor” refers only to
+behavioral-pipeline repeatability, not to the lens artifacts analyzed
+separately. Zero rank swaps within identical settings (0/28 pairs); one rank
+swap under deliberation.
 
 Silent-failure detail for the text: unreadable responses (model returned
 empty text because hidden thinking consumed the token budget; or transport
@@ -134,26 +136,31 @@ Mid-layer top-token table (condition "easy_money", A/B labels; ranks out of
 
 | status | claim |
 |---|---|
-| VERIFIED | Estimator recovers planted preferences (ρ≈0.99, three scales) |
-| VERIFIED | Unreadable answers silently become 0.5/0.5 ties; all-unreadable run looks successful (log-loss = ln 2 signature) |
-| VERIFIED | Noise floor: 0.014 (estimator) / 0.054 (+sampling), 0 rank swaps |
-| VERIFIED | Discordant pairs choose the second-listed option 44/44; label-general (X/Y → Y 5/6); follows layout, not letter (21/24) |
-| VERIFIED | Plain logit lens invalid as intermediate readout on Gemma-4-31B-it (3 controls fail; readability ~1/60 layers) |
-| VERIFIED | Readability depends on answer letters: X/Y ~L48 vs A/B ~L59 |
-| VERIFIED | Leak-free probe: decision decodable L36+ (0.92–0.96), collapses at L58–59 |
-| VERIFIED | Position signal emerges ≈ same window (L35–38) as decision signal, 20-layer plateau |
-| PRELIMINARY | Deliberation shifts utilities ~8× noise floor (10% unreadable contamination) |
-| PRELIMINARY | Money compensates stated harm only up to indifference, never through it (single scenario family) |
-| PRELIMINARY | Framing effects exist but smaller than position effects; no monotone human-salience gradient |
-| INVALIDATED | "Late crystallization / hesitation" from logit-lens trajectories — template/token artifact |
-| INVALIDATED | "Cross-domain trajectory agreement = shared value representation" (unrelated items agree equally) |
-| INVALIDATED | "The tie-break is a letter-B preference" (layout swap: it follows position) |
-| OPEN | Causal role of the L36–40 representation (patching untested) |
-| OPEN | Slot preference vs content preference inside the probe target |
-| OPEN | Whether a matched instruct-model J-lens / tuned lens passes the control battery |
+| VERIFIED | Content exchange between A/first and B/second slots made the selected content flip while 44/44 answers stayed second-listed; printing B first made A (second) win 21/24, and independent A/B–X/Y cases were second-listed 13/14. |
+| VERIFIED | Estimator recovers planted preferences (ρ ≈ 0.99, three scales). |
+| VERIFIED | Unreadable answers silently become 0.5/0.5 ties; an all-unreadable run looks successful (log-loss = ln 2). |
+| VERIFIED | Behavioral repeatability floor: 0.014 (estimator randomness) / 0.054 (+ answer sampling), zero rank swaps. |
+| VERIFIED | Plain logit lens is invalid as an intermediate readout here (three controls fail; readability ≈1/60 layers). |
+| VERIFIED | Readability depends on answer letters: X/Y ≈L48 vs A/B ≈L59. |
+| VERIFIED | Scenario- and label-held-out probe decodes choice from L36 (0.92–0.96) and collapses at L58–59. |
+| VERIFIED | Position signal emerges in approximately the same window (L35–38) as decision signal, then plateaus for 20 layers. |
+| PRELIMINARY | Deliberation shifts utilities ≈8× the behavioral repeatability floor; 10% unreadable responses contaminate the condition. |
+| PRELIMINARY | Money compensates stated harm only up to indifference, never through it (single scenario family). |
+| PRELIMINARY | Framing effects exist but are smaller than position effects; no monotone human-salience gradient. |
+| INVALIDATED | “Late crystallization / hesitation” from logit-lens trajectories; a template/token artifact. |
+| INVALIDATED | “Cross-domain trajectory agreement = shared value representation”; unrelated items agree equally. |
+| INVALIDATED | “The tie-break is a letter-B preference”; layout swap shows that it follows position. |
+| OPEN | Causal role of the L36–40 representation; patching untested. |
+| OPEN | Slot preference versus content preference inside the probe target. |
+| OPEN | Whether a matched instruct-model J-lens or tuned lens passes the control battery. |
 
 ## G. Behavioral sweep details (supporting numbers)
 
+- **Position controls:** exchanging the same contents between A/first and
+  B/second slots changed the selected content in 22 pairs, yet all 44 answers
+  stayed with the second-listed slot. With letters fixed but Option B printed
+  first, A—now second-listed—won 21/24; an independent everyday-outcome set
+  across A/B and X/Y labels was second-listed in 13/14 discordant pairs.
 - **Sharp boundary (P2, household framing):** invests at social cost 0 in
   6/6 variants; declines the +20% return at any tested positive cost ≥0.25%
   in 15/16; epsilon costs 0.001–0.05% already fall in the order-discordant
@@ -194,3 +201,6 @@ Mid-layer top-token table (condition "easy_money", A/B labels; ranks out of
 - **Known estimator defects (documented, upstream):** unseeded fits and
   edge selection (R1–R3), pseudolabels included in training metrics (S1),
   order effects pooled away (S2). See `report/prior_work_validation.md`.
+  Separately, all reported probe-transfer scores hold out both scenarios and
+  the entire answer-label set; an earlier exploratory split that allowed
+  scenario overlap was discarded, and no reported result uses it.
