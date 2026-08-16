@@ -1,0 +1,1538 @@
+[
+  {
+    "pair": 0,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 32.328125
+  },
+  {
+    "pair": 0,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -38.0625
+  },
+  {
+    "pair": 0,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 35.6875
+  },
+  {
+    "pair": 0,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -23.828125
+  },
+  {
+    "pair": 1,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -43.41796875
+  },
+  {
+    "pair": 1,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 38.4140625
+  },
+  {
+    "pair": 1,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -29.3203125
+  },
+  {
+    "pair": 1,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 38.609375
+  },
+  {
+    "pair": 2,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 28.806640625
+  },
+  {
+    "pair": 2,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -42.3134765625
+  },
+  {
+    "pair": 2,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 32.524169921875
+  },
+  {
+    "pair": 2,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -23.65234375
+  },
+  {
+    "pair": 3,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -40.4453125
+  },
+  {
+    "pair": 3,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 33.9375
+  },
+  {
+    "pair": 3,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -26.2265625
+  },
+  {
+    "pair": 3,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 37.484375
+  },
+  {
+    "pair": 4,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -33.90625
+  },
+  {
+    "pair": 4,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 20.84375
+  },
+  {
+    "pair": 4,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -17.6875
+  },
+  {
+    "pair": 4,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 18.40625
+  },
+  {
+    "pair": 5,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -26.140625
+  },
+  {
+    "pair": 5,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 1.09375
+  },
+  {
+    "pair": 5,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -10.875
+  },
+  {
+    "pair": 5,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 8.78125
+  },
+  {
+    "pair": 6,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 27.740234375
+  },
+  {
+    "pair": 6,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -42.814453125
+  },
+  {
+    "pair": 6,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 31.466796875
+  },
+  {
+    "pair": 6,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -24.5859375
+  },
+  {
+    "pair": 7,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -48.390625
+  },
+  {
+    "pair": 7,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -38.421875
+  },
+  {
+    "pair": 7,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -29.2109375
+  },
+  {
+    "pair": 7,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -17.515625
+  },
+  {
+    "pair": 8,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -42.765625
+  },
+  {
+    "pair": 8,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 28.513671875
+  },
+  {
+    "pair": 8,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -23.625
+  },
+  {
+    "pair": 8,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 31.6220703125
+  },
+  {
+    "pair": 9,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -37.03125
+  },
+  {
+    "pair": 9,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -25.78125
+  },
+  {
+    "pair": 9,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -25.046875
+  },
+  {
+    "pair": 9,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -25.0625
+  },
+  {
+    "pair": 10,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -18.28125
+  },
+  {
+    "pair": 10,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 36.734375
+  },
+  {
+    "pair": 10,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -19.28125
+  },
+  {
+    "pair": 10,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 34.984375
+  },
+  {
+    "pair": 11,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -38.90625
+  },
+  {
+    "pair": 11,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 32.59375
+  },
+  {
+    "pair": 11,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -22.75
+  },
+  {
+    "pair": 11,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 34.90625
+  },
+  {
+    "pair": 12,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 33.15625
+  },
+  {
+    "pair": 12,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -44.220703125
+  },
+  {
+    "pair": 12,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 32.7939453125
+  },
+  {
+    "pair": 12,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -23.9404296875
+  },
+  {
+    "pair": 13,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -34.046875
+  },
+  {
+    "pair": 13,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 17.734375
+  },
+  {
+    "pair": 13,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -21.78125
+  },
+  {
+    "pair": 13,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 15.78125
+  },
+  {
+    "pair": 14,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -42.67578125
+  },
+  {
+    "pair": 14,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 32.08203125
+  },
+  {
+    "pair": 14,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -27.25
+  },
+  {
+    "pair": 14,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 32.333984375
+  },
+  {
+    "pair": 15,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -42.2109375
+  },
+  {
+    "pair": 15,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 29.84375
+  },
+  {
+    "pair": 15,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -26.1171875
+  },
+  {
+    "pair": 15,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 34.296875
+  },
+  {
+    "pair": 16,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 28.185546875
+  },
+  {
+    "pair": 16,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -41.271484375
+  },
+  {
+    "pair": 16,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 30.61279296875
+  },
+  {
+    "pair": 16,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -24.8212890625
+  },
+  {
+    "pair": 17,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -19.8125
+  },
+  {
+    "pair": 17,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -35.609375
+  },
+  {
+    "pair": 17,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -3.46875
+  },
+  {
+    "pair": 17,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -18.953125
+  },
+  {
+    "pair": 18,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 26.95703125
+  },
+  {
+    "pair": 18,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -43.2119140625
+  },
+  {
+    "pair": 18,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 31.099609375
+  },
+  {
+    "pair": 18,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -24.703125
+  },
+  {
+    "pair": 19,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -43.21826171875
+  },
+  {
+    "pair": 19,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 28.91796875
+  },
+  {
+    "pair": 19,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -24.3837890625
+  },
+  {
+    "pair": 19,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 32.42529296875
+  },
+  {
+    "pair": 20,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -32.96875
+  },
+  {
+    "pair": 20,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -37.359375
+  },
+  {
+    "pair": 20,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -20.5625
+  },
+  {
+    "pair": 20,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -23.96875
+  },
+  {
+    "pair": 21,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -40.8828125
+  },
+  {
+    "pair": 21,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 30.171875
+  },
+  {
+    "pair": 21,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -24.515625
+  },
+  {
+    "pair": 21,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 33.65625
+  },
+  {
+    "pair": 22,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -42.10546875
+  },
+  {
+    "pair": 22,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 34.65625
+  },
+  {
+    "pair": 22,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -24.703125
+  },
+  {
+    "pair": 22,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 35.484375
+  },
+  {
+    "pair": 23,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -26.0390625
+  },
+  {
+    "pair": 23,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -7.328125
+  },
+  {
+    "pair": 23,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -13.90625
+  },
+  {
+    "pair": 23,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 12.28125
+  },
+  {
+    "pair": 24,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -44.4453125
+  },
+  {
+    "pair": 24,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 32.9375
+  },
+  {
+    "pair": 24,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -26.390625
+  },
+  {
+    "pair": 24,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 34.984375
+  },
+  {
+    "pair": 25,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -42.2587890625
+  },
+  {
+    "pair": 25,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 28.4375
+  },
+  {
+    "pair": 25,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -23.07421875
+  },
+  {
+    "pair": 25,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 33.34375
+  },
+  {
+    "pair": 26,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 17.5
+  },
+  {
+    "pair": 26,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -38.109375
+  },
+  {
+    "pair": 26,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 10.3125
+  },
+  {
+    "pair": 26,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -24.640625
+  },
+  {
+    "pair": 27,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -45.958984375
+  },
+  {
+    "pair": 27,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 30.935546875
+  },
+  {
+    "pair": 27,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -26.4453125
+  },
+  {
+    "pair": 27,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 32.78369140625
+  },
+  {
+    "pair": 28,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 25.15625
+  },
+  {
+    "pair": 28,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -38.15625
+  },
+  {
+    "pair": 28,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 29.828125
+  },
+  {
+    "pair": 28,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -24.734375
+  },
+  {
+    "pair": 29,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -37.265625
+  },
+  {
+    "pair": 29,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 34.328125
+  },
+  {
+    "pair": 29,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -20.46875
+  },
+  {
+    "pair": 29,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 32.6875
+  },
+  {
+    "pair": 30,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 31.1484375
+  },
+  {
+    "pair": 30,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -43.0546875
+  },
+  {
+    "pair": 30,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 34.07421875
+  },
+  {
+    "pair": 30,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -25.7890625
+  },
+  {
+    "pair": 31,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 31.078125
+  },
+  {
+    "pair": 31,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -39.28125
+  },
+  {
+    "pair": 31,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 31.53125
+  },
+  {
+    "pair": 31,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -22.6875
+  },
+  {
+    "pair": 32,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 32.33984375
+  },
+  {
+    "pair": 32,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -45.325927734375
+  },
+  {
+    "pair": 32,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 34.51611328125
+  },
+  {
+    "pair": 32,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -25.765625
+  },
+  {
+    "pair": 33,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 31.603515625
+  },
+  {
+    "pair": 33,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -44.9609375
+  },
+  {
+    "pair": 33,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 33.13134765625
+  },
+  {
+    "pair": 33,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -31.921875
+  },
+  {
+    "pair": 34,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 29.443359375
+  },
+  {
+    "pair": 34,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -43.36865234375
+  },
+  {
+    "pair": 34,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 32.494140625
+  },
+  {
+    "pair": 34,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -24.865234375
+  },
+  {
+    "pair": 35,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -43.7548828125
+  },
+  {
+    "pair": 35,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 27.490234375
+  },
+  {
+    "pair": 35,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -24.970703125
+  },
+  {
+    "pair": 35,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 31.2969970703125
+  },
+  {
+    "pair": 36,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -41.890625
+  },
+  {
+    "pair": 36,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 35.4375
+  },
+  {
+    "pair": 36,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -23.9921875
+  },
+  {
+    "pair": 36,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 36.75
+  },
+  {
+    "pair": 37,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 16.015625
+  },
+  {
+    "pair": 37,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -38.828125
+  },
+  {
+    "pair": 37,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 18.6484375
+  },
+  {
+    "pair": 37,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -20.796875
+  },
+  {
+    "pair": 38,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -40.96875
+  },
+  {
+    "pair": 38,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -31.9375
+  },
+  {
+    "pair": 38,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -26.625
+  },
+  {
+    "pair": 38,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -11.8125
+  },
+  {
+    "pair": 39,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -2.9375
+  },
+  {
+    "pair": 39,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -13.96875
+  },
+  {
+    "pair": 39,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 12.625
+  },
+  {
+    "pair": 39,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 18.5625
+  },
+  {
+    "pair": 40,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -43.66015625
+  },
+  {
+    "pair": 40,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 34.5078125
+  },
+  {
+    "pair": 40,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -27.28125
+  },
+  {
+    "pair": 40,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 37.8984375
+  },
+  {
+    "pair": 41,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 18.859375
+  },
+  {
+    "pair": 41,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -39.2109375
+  },
+  {
+    "pair": 41,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 17.953125
+  },
+  {
+    "pair": 41,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -24.0
+  },
+  {
+    "pair": 42,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -41.34130859375
+  },
+  {
+    "pair": 42,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 28.927734375
+  },
+  {
+    "pair": 42,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -24.2265625
+  },
+  {
+    "pair": 42,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 33.5751953125
+  },
+  {
+    "pair": 43,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "A",
+    "semantic_choice": "x",
+    "final_margin": 33.875
+  },
+  {
+    "pair": 43,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -42.2626953125
+  },
+  {
+    "pair": 43,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "X",
+    "semantic_choice": "x",
+    "final_margin": 36.5
+  },
+  {
+    "pair": 43,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "Y",
+    "semantic_choice": "x",
+    "final_margin": -24.349609375
+  },
+  {
+    "pair": 44,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -36.578125
+  },
+  {
+    "pair": 44,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 33.7109375
+  },
+  {
+    "pair": 44,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -19.40625
+  },
+  {
+    "pair": 44,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 35.4765625
+  },
+  {
+    "pair": 45,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -44.6484375
+  },
+  {
+    "pair": 45,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 25.890625
+  },
+  {
+    "pair": 45,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -26.421875
+  },
+  {
+    "pair": 45,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 31.1875
+  },
+  {
+    "pair": 46,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -45.953125
+  },
+  {
+    "pair": 46,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "B",
+    "semantic_choice": "x",
+    "final_margin": -2.46875
+  },
+  {
+    "pair": 46,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -26.90625
+  },
+  {
+    "pair": 46,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 12.84375
+  },
+  {
+    "pair": 47,
+    "labels": "AB",
+    "order": "orig",
+    "answer_label": "B",
+    "semantic_choice": "y",
+    "final_margin": -44.26123046875
+  },
+  {
+    "pair": 47,
+    "labels": "AB",
+    "order": "swap",
+    "answer_label": "A",
+    "semantic_choice": "y",
+    "final_margin": 27.44921875
+  },
+  {
+    "pair": 47,
+    "labels": "XY",
+    "order": "orig",
+    "answer_label": "Y",
+    "semantic_choice": "y",
+    "final_margin": -24.71484375
+  },
+  {
+    "pair": 47,
+    "labels": "XY",
+    "order": "swap",
+    "answer_label": "X",
+    "semantic_choice": "y",
+    "final_margin": 32.1728515625
+  }
+]

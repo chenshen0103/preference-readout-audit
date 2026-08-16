@@ -1,0 +1,194 @@
+[
+ {
+  "r": 20,
+  "c": 0.001,
+  "assign": "profitA",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 28.11328125
+ },
+ {
+  "r": 20,
+  "c": 0.001,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 33.421875
+ },
+ {
+  "r": 20,
+  "c": 0.01,
+  "assign": "profitA",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 29.60546875
+ },
+ {
+  "r": 20,
+  "c": 0.01,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 34.65625
+ },
+ {
+  "r": 20,
+  "c": 0.05,
+  "assign": "profitA",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 35.765625
+ },
+ {
+  "r": 20,
+  "c": 0.05,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 34.0625
+ },
+ {
+  "r": 20,
+  "c": 0.25,
+  "assign": "profitA",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 25.859375
+ },
+ {
+  "r": 20,
+  "c": 0.25,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 31.6328125
+ },
+ {
+  "r": 50,
+  "c": 0.25,
+  "assign": "profitA",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 35.2109375
+ },
+ {
+  "r": 50,
+  "c": 0.25,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 34.7421875
+ },
+ {
+  "r": 100,
+  "c": 0.25,
+  "assign": "profitA",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 31.609375
+ },
+ {
+  "r": 100,
+  "c": 0.25,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 35.59375
+ },
+ {
+  "r": 200,
+  "c": 0.25,
+  "assign": "profitA",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 31.7421875
+ },
+ {
+  "r": 200,
+  "c": 0.25,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 35.9921875
+ },
+ {
+  "r": 500,
+  "c": 0.25,
+  "assign": "profitA",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 30.234375
+ },
+ {
+  "r": 500,
+  "c": 0.25,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 35.78125
+ },
+ {
+  "r": 50,
+  "c": 5,
+  "assign": "profitA",
+  "letter": "B",
+  "second_listed": false,
+  "margin": -33.921875
+ },
+ {
+  "r": 50,
+  "c": 5,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 31.48046875
+ },
+ {
+  "r": 100,
+  "c": 5,
+  "assign": "profitA",
+  "letter": "B",
+  "second_listed": false,
+  "margin": -1.8125
+ },
+ {
+  "r": 100,
+  "c": 5,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 31.73828125
+ },
+ {
+  "r": 200,
+  "c": 5,
+  "assign": "profitA",
+  "letter": "B",
+  "second_listed": false,
+  "margin": -13.0
+ },
+ {
+  "r": 200,
+  "c": 5,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 32.3671875
+ },
+ {
+  "r": 500,
+  "c": 5,
+  "assign": "profitA",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 18.90625
+ },
+ {
+  "r": 500,
+  "c": 5,
+  "assign": "profitB",
+  "letter": "A",
+  "second_listed": true,
+  "margin": 33.4375
+ }
+]

@@ -1,0 +1,416 @@
+[
+ {
+  "test": "epsilon",
+  "framing": "household",
+  "ret": 20,
+  "cost": 0.001,
+  "order": "orig",
+  "margin": -35.515625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "epsilon",
+  "framing": "household",
+  "ret": 20,
+  "cost": 0.001,
+  "order": "swap",
+  "margin": -41.900390625,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "epsilon",
+  "framing": "household",
+  "ret": 20,
+  "cost": 0.01,
+  "order": "orig",
+  "margin": -37.09375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "epsilon",
+  "framing": "household",
+  "ret": 20,
+  "cost": 0.01,
+  "order": "swap",
+  "margin": -41.0859375,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "epsilon",
+  "framing": "household",
+  "ret": 20,
+  "cost": 0.05,
+  "order": "orig",
+  "margin": -38.3828125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "epsilon",
+  "framing": "household",
+  "ret": 20,
+  "cost": 0.05,
+  "order": "swap",
+  "margin": -39.3984375,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 50,
+  "cost": 0.25,
+  "order": "orig",
+  "margin": -39.625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 50,
+  "cost": 0.25,
+  "order": "swap",
+  "margin": -39.2734375,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 100,
+  "cost": 0.25,
+  "order": "orig",
+  "margin": -39.203125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 100,
+  "cost": 0.25,
+  "order": "swap",
+  "margin": -39.9453125,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 200,
+  "cost": 0.25,
+  "order": "orig",
+  "margin": -39.421875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 200,
+  "cost": 0.25,
+  "order": "swap",
+  "margin": -40.84765625,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 500,
+  "cost": 0.25,
+  "order": "orig",
+  "margin": -38.71875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 500,
+  "cost": 0.25,
+  "order": "swap",
+  "margin": -41.69140625,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 50,
+  "cost": 5,
+  "order": "orig",
+  "margin": -40.84375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 50,
+  "cost": 5,
+  "order": "swap",
+  "margin": -8.3125,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 100,
+  "cost": 5,
+  "order": "orig",
+  "margin": -40.98046875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 100,
+  "cost": 5,
+  "order": "swap",
+  "margin": -32.46875,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 200,
+  "cost": 5,
+  "order": "orig",
+  "margin": -40.70703125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 200,
+  "cost": 5,
+  "order": "swap",
+  "margin": -33.921875,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 500,
+  "cost": 5,
+  "order": "orig",
+  "margin": -40.44140625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "return",
+  "framing": "household",
+  "ret": 500,
+  "cost": 5,
+  "order": "swap",
+  "margin": -37.5625,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "framing",
+  "framing": "household",
+  "ret": 20,
+  "cost": 0.25,
+  "order": "orig",
+  "margin": -39.625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "household",
+  "ret": 20,
+  "cost": 0.25,
+  "order": "swap",
+  "margin": -37.671875,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "framing",
+  "framing": "household",
+  "ret": 20,
+  "cost": 5,
+  "order": "orig",
+  "margin": -40.720703125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "household",
+  "ret": 20,
+  "cost": 5,
+  "order": "swap",
+  "margin": 25.28125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "household",
+  "ret": 20,
+  "cost": 20,
+  "order": "orig",
+  "margin": -40.45703125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "household",
+  "ret": 20,
+  "cost": 20,
+  "order": "swap",
+  "margin": 35.4609375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "consumer",
+  "ret": 20,
+  "cost": 0.25,
+  "order": "orig",
+  "margin": -39.98046875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "consumer",
+  "ret": 20,
+  "cost": 0.25,
+  "order": "swap",
+  "margin": 34.8125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "consumer",
+  "ret": 20,
+  "cost": 5,
+  "order": "orig",
+  "margin": -40.111572265625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "consumer",
+  "ret": 20,
+  "cost": 5,
+  "order": "swap",
+  "margin": 35.8125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "consumer",
+  "ret": 20,
+  "cost": 20,
+  "order": "orig",
+  "margin": -40.598876953125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "consumer",
+  "ret": 20,
+  "cost": 20,
+  "order": "swap",
+  "margin": 33.19921875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "retail",
+  "ret": 20,
+  "cost": 0.25,
+  "order": "orig",
+  "margin": -39.453125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "retail",
+  "ret": 20,
+  "cost": 0.25,
+  "order": "swap",
+  "margin": -35.828125,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "test": "framing",
+  "framing": "retail",
+  "ret": 20,
+  "cost": 5,
+  "order": "orig",
+  "margin": -39.82421875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "retail",
+  "ret": 20,
+  "cost": 5,
+  "order": "swap",
+  "margin": 35.984375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "retail",
+  "ret": 20,
+  "cost": 20,
+  "order": "orig",
+  "margin": -40.751953125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "retail",
+  "ret": 20,
+  "cost": 20,
+  "order": "swap",
+  "margin": 34.25,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "index",
+  "ret": 20,
+  "cost": 0.25,
+  "order": "orig",
+  "margin": -38.703125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "index",
+  "ret": 20,
+  "cost": 0.25,
+  "order": "swap",
+  "margin": 22.125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "index",
+  "ret": 20,
+  "cost": 5,
+  "order": "orig",
+  "margin": -39.412109375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "index",
+  "ret": 20,
+  "cost": 5,
+  "order": "swap",
+  "margin": 36.265625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "index",
+  "ret": 20,
+  "cost": 20,
+  "order": "orig",
+  "margin": -39.95751953125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "test": "framing",
+  "framing": "index",
+  "ret": 20,
+  "cost": 20,
+  "order": "swap",
+  "margin": 33.0390625,
+  "semantic_choice": "BASELINE"
+ }
+]

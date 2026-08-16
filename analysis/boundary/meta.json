@@ -1,0 +1,338 @@
+[
+ {
+  "paraphrase": "p1",
+  "social_cost": 0,
+  "order": "orig",
+  "margin": 27.65625,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 0,
+  "order": "swap",
+  "margin": -41.192138671875,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 0.25,
+  "order": "orig",
+  "margin": -39.625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 0.25,
+  "order": "swap",
+  "margin": -37.671875,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 0.5,
+  "order": "orig",
+  "margin": -40.18359375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 0.5,
+  "order": "swap",
+  "margin": -34.296875,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 1,
+  "order": "orig",
+  "margin": -39.6875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 1,
+  "order": "swap",
+  "margin": -37.140625,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 2,
+  "order": "orig",
+  "margin": -40.21875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 2,
+  "order": "swap",
+  "margin": -7.5625,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 3,
+  "order": "orig",
+  "margin": -40.51171875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 3,
+  "order": "swap",
+  "margin": 5.1875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 5,
+  "order": "orig",
+  "margin": -40.720703125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 5,
+  "order": "swap",
+  "margin": 25.28125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 8,
+  "order": "orig",
+  "margin": -40.939453125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p1",
+  "social_cost": 8,
+  "order": "swap",
+  "margin": 33.203125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 0,
+  "order": "orig",
+  "margin": 31.4296875,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 0,
+  "order": "swap",
+  "margin": -36.75,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 0.25,
+  "order": "orig",
+  "margin": -38.15625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 0.25,
+  "order": "swap",
+  "margin": 32.15625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 0.5,
+  "order": "orig",
+  "margin": -38.83203125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 0.5,
+  "order": "swap",
+  "margin": 31.5625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 1,
+  "order": "orig",
+  "margin": -38.375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 1,
+  "order": "swap",
+  "margin": 32.328125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 2,
+  "order": "orig",
+  "margin": -39.03125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 2,
+  "order": "swap",
+  "margin": 31.01953125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 3,
+  "order": "orig",
+  "margin": -38.80859375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 3,
+  "order": "swap",
+  "margin": 30.869140625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 5,
+  "order": "orig",
+  "margin": -38.92578125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 5,
+  "order": "swap",
+  "margin": 30.921875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 8,
+  "order": "orig",
+  "margin": -39.083984375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p2",
+  "social_cost": 8,
+  "order": "swap",
+  "margin": 30.802734375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 0,
+  "order": "orig",
+  "margin": 27.59765625,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 0,
+  "order": "swap",
+  "margin": -41.5927734375,
+  "semantic_choice": "PROFIT"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 0.25,
+  "order": "orig",
+  "margin": -36.40625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 0.25,
+  "order": "swap",
+  "margin": 32.875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 0.5,
+  "order": "orig",
+  "margin": -37.4765625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 0.5,
+  "order": "swap",
+  "margin": 32.125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 1,
+  "order": "orig",
+  "margin": -33.96875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 1,
+  "order": "swap",
+  "margin": 25.40625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 2,
+  "order": "orig",
+  "margin": -36.390625,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 2,
+  "order": "swap",
+  "margin": 33.828125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 3,
+  "order": "orig",
+  "margin": -38.3125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 3,
+  "order": "swap",
+  "margin": 34.109375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 5,
+  "order": "orig",
+  "margin": -38.6875,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 5,
+  "order": "swap",
+  "margin": 35.28125,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 8,
+  "order": "orig",
+  "margin": -39.3359375,
+  "semantic_choice": "BASELINE"
+ },
+ {
+  "paraphrase": "p3",
+  "social_cost": 8,
+  "order": "swap",
+  "margin": 34.25,
+  "semantic_choice": "BASELINE"
+ }
+]
