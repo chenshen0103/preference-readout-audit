@@ -1,0 +1,9 @@
+scenario,variant,theta_final,p_range,compliance
+finance_strategy,base,,0.895-0.957,1.0
+finance_strategy,dominated_third,,0.998-0.999,1.0
+finance_strategy,loss_frame,,0.979-0.988,1.0
+finance_strategy,order_swap,,0.983-0.988,1.0
+purchase,base,,0.999-1.000,1.0
+purchase,order_swap,,0.915-0.985,1.0
+purchase_abstract_good,base,,0.999-1.000,1.0
+purchase_abstract_good,order_swap,,0.046-0.075,1.0
