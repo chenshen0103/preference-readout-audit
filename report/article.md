@@ -150,7 +150,7 @@ presentations agree on the content. Orange: they disagree — every orange dot
 sits in the "second-listed option won both times" quadrant, and the opposite
 quadrant is empty. Scores are final-layer logit gaps from single
 deterministic forward passes: the disagreeing answers are not weak wobbles
-but confident commitments (|gap| ≈ 25–42) in both directions.*
+but confident commitments (|gap| = 6–42, 38/44 above 25) in both directions.*
 
 Two honesty notes. First, most of the 22 disagreeing conditions are parameter
 steps within one scenario family, so they are far from 22 independent

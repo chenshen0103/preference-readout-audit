@@ -50,7 +50,7 @@ The estimator recovered planted rankings at ρ = 0.993 for 40 outcomes and ≈0.
 
 ### 4.2 Near indifference, position determines the reported preference
 
-Of 74 content-swapped condition pairs, 22 disagreed. All 44 responses selected the second-listed option (Figure 1), with |gap| ≈ 25–42. The effect follows position: reversing physical layout switched 21/24 conditions to A, still second-listed, and an independent everyday set yielded 13/14 second-listed choices across A/B and X/Y. Most trade-off conditions are steps in one family, not independent replications.
+Of 74 content-swapped condition pairs, 22 disagreed. All 44 responses selected the second-listed option (Figure 1), with |gap| = 6–42 (38/44 above 25; even the smallest corresponds to a two-way choice probability above 0.99). The effect follows position: reversing physical layout switched 21/24 conditions to A, still second-listed, and an independent everyday set yielded 13/14 second-listed choices across A/B and X/Y. Most trade-off conditions are steps in one family, not independent replications.
 
 ![Figure 1](figures/fig4_border_default.png){width=42%}
 
