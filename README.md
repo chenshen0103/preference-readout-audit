@@ -14,6 +14,13 @@ that both can produce persuasive numbers after their validity has failed.
 > — the default follows physical position (21/24 under layout reversal) and is
 > not specific to the letter "B" (13/14 under X/Y labels).
 
+![Second-listed default and its control chain](report/figures/readme_hero.png)
+
+*Left: all 74 paired conditions; every order-discordant pair (orange) sits in
+the "second-listed won both times" quadrant and the opposite quadrant is
+empty. Right: the default survives layout reversal and relabeling — it is
+positional. Regenerate with `python analysis/make_readme_figure.py`.*
+
 ```bash
 git clone https://github.com/chenshen0103/PressureTest.git && cd PressureTest
 python3 scripts/reproduce_core_result.py
