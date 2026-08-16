@@ -34,13 +34,16 @@ python3 -m venv .venv && .venv/bin/pip install numpy matplotlib jupyter
 .venv/bin/jupyter lab notebooks/preference_measurement_validity.ipynb
 ```
 
-A self-contained copy (notebook + data + the 18 experiment scripts, 1.5 MB) is
+A self-contained copy (notebook + data + the 21 experiment scripts, 1.5 MB) is
 `notebooks/preference_measurement_validity_bundle.zip`.
 
 ## Full regeneration from the model (GPU)
 
-The committed records were produced on 3–4× Tesla V100-32GB. Always work in an
-isolated venv (never install into base):
+The committed records were produced on one NVIDIA DGX Station: 4× Tesla
+V100-DGXS-32GB (NVLink, driver 525.105.17), Xeon E5-2698 v4, 251 GB RAM,
+Ubuntu 18.04. fp16 throughout (V100 lacks bf16); forward passes are
+deterministic on this setup. Always work in an isolated venv (never install
+into base):
 
 ```bash
 python3 -m venv .venv --system-site-packages && source .venv/bin/activate

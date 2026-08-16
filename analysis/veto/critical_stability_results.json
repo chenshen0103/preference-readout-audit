@@ -1,0 +1,26 @@
+{
+ "arrangement": "reversed layout (Option B block first), c=5, profitA slot",
+ "exact_repeats_p1_r100": [
+  -1.8125,
+  -1.8125,
+  -1.8125,
+  -1.8125,
+  -1.8125
+ ],
+ "return_sweep_p1": {
+  "80": -31.59,
+  "90": -30.61,
+  "95": -25.25,
+  "100": -1.81,
+  "105": -31.12,
+  "110": -23.78,
+  "120": -23.75,
+  "150": -23.25,
+  "200": -13.0
+ },
+ "paraphrases_r100": {
+  "p2": -42.63,
+  "p3": -25.56
+ },
+ "reading": "five exact repeats bit-identical (-1.8125): deterministic, not float noise; near-zero margin is an isolated notch at r=100 (r=95 -> -25.3, r=105 -> -31.1) and wording-specific (p2 -42.6, p3 -25.6): a numeral-triggered resonance, not a smooth trade-off crossing."
+}

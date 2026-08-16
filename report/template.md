@@ -240,12 +240,14 @@ Unreadable responses are imputed as 0.5/0.5 votes by `unparseable_mode: distribu
 - **Framing (PRELIMINARY, small n):** at cost 0.25%, abstract framings produce genuine refusal while human-salient framings are order-discordant. There is no monotone human-salience gradient.
 - **Purchase sanity check:** implied fair prices are graded: banana ≈$2 < coffee ≈$4 < book/umbrella ≈$22 < coat ≈$134 < bicycle ≈$235 < smartphone ≈$455 ≈ refrigerator ≈$525.
 - **IIA diagnostic:** adding a strictly dominated third option changes risky:safe odds by 5–43× and is itself chosen with p up to 0.9999 (last-listed of three), providing a one-extra-prompt alarm for position-dominated regimes.
+- **Numeral resonance (PRELIMINARY):** the single non-saturated final margin (−1.81) is bit-identical across five exact repeats, but is an isolated notch at return = 100% (r = 95 → −25.3, r = 105 → −31.1) and disappears under paraphrase (−42.6 / −25.6) — margins react to the specific numeral, not smoothly to magnitude (`analysis/veto/critical_stability_results.json`).
 
 ## H. Reproducibility
 
-- **Model:** `google/gemma-4-31B-it`, revision `842da3794eaa0b77d5f08bae87a17459d91ff475`, fp16, NNsight `VisionLanguageModel`, sharded on 3–4× Tesla V100-32GB. Mechanistic runs are deterministic. Behavioral runs use Ollama `gemma4:31b` (Q4_K_M, `num_ctx=2048`); fp16 and Q4 numbers are never mixed.
+- **Hardware:** one NVIDIA DGX Station — 4× Tesla V100-DGXS-32GB (NVLink), driver 525.105.17, Intel Xeon E5-2698 v4 (40 threads), 251 GB RAM, Ubuntu 18.04.6. Exact repeats of a forward pass are bit-identical on this setup (five repeats of one near-boundary condition all returned −1.8125).
+- **Model:** `google/gemma-4-31B-it`, revision `842da3794eaa0b77d5f08bae87a17459d91ff475`, fp16 (V100 lacks bf16), NNsight `VisionLanguageModel`, sharded on 3–4× V100. Mechanistic runs are deterministic. Behavioral runs use Ollama `gemma4:31b` (Q4_K_M, `num_ctx=2048`) in Docker; fp16 and Q4 numbers are never mixed.
 - **Upstream pipeline:** emergent-values commit `5e5966d`; fixes recorded in `local-fixes.patch`; validation scripts in `report/data/*.py`.
-- **Analysis:** scripts and outputs are in `analysis/`; figures regenerate with `python analysis/make_figures.py`.
+- **Analysis:** scripts and outputs are in `analysis/`; every result file has a committed generating script, including the layout-swap test (`analysis/layout_swap_test.py` → `reversed_listing.json`) and the frozen-probe application (`analysis/veto_probe_scores.py`). Figures regenerate with `python analysis/make_figures.py`; the core behavioral claim re-verifies with `python3 scripts/reproduce_core_result.py` (stdlib only, no GPU).
 - **Review bundle:** `notebooks/preference_measurement_validity_bundle.zip` contains an executed notebook, embedded figures, loaded results, and 18 experiment scripts; it reruns with NumPy and Matplotlib only.
 - **Known upstream defects:** unseeded fits and edge selection (R1–R3), pseudolabels included in training metrics (S1), and order effects pooled away (S2). See `report/prior_work_validation.md`. Separately, all reported probe-transfer scores hold out both scenarios and the entire answer-label set; an earlier exploratory split that allowed scenario overlap was discarded, and no reported result uses it.
 
