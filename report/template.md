@@ -248,4 +248,4 @@ Unreadable responses are imputed as 0.5/0.5 votes by `unparseable_mode: distribu
 
 ## LLM Usage Statement
 
-We used OpenAI Codex to help assemble and edit this report from project artifacts. All reported results and claims were checked against the project's saved outputs and control analyses by the team.
+We used Claude (Claude Code) extensively for experiment design, implementation, execution, and analysis, and OpenAI Codex to help assemble and edit this report from project artifacts. All reported results and claims were checked against the project's saved outputs and control analyses by the team.
