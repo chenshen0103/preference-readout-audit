@@ -16,10 +16,24 @@ that both can produce persuasive numbers after their validity has failed.
 
 ![Second-listed default and its control chain](report/figures/readme_hero.png)
 
-*Left: all 74 paired conditions; every order-discordant pair (orange) sits in
-the "second-listed won both times" quadrant and the opposite quadrant is
-empty. Right: the default survives layout reversal and relabeling — it is
-positional. Regenerate with `python analysis/make_readme_figure.py`.*
+**How to read the left panel.** Every condition is asked twice, with the two
+option contents swapped between the slots. Both axes score the *same*
+reference option (the content listed first in the original presentation):
+**x** = its final-layer logit gap when it is listed **first**, **y** = when it
+is listed **second**; positive means that option wins. The four quadrants:
+
+| quadrant | meaning |
+|---|---|
+| upper-right | reference option wins in both presentations → genuine content preference for it |
+| lower-left | the *other* option wins both times → genuine preference the other way |
+| **upper-left** (orange) | presentations disagree: loses when listed first, wins when listed second → **the second-listed slot won both times** |
+| lower-right | the mirror inconsistency (first-listed wins twice) — if ties broke randomly this would be as full as upper-left; it is **empty** |
+
+**Right panel:** among discordant answers, the share choosing the second-listed
+option under each control — same template (44/44), physical layout reversed
+with letters unchanged (21/24), X/Y labels on an independent scenario set
+(13/14). All far from the 0.5 line random tie-breaking would give.
+Regenerate with `python analysis/make_readme_figure.py`.
 
 ```bash
 git clone https://github.com/chenshen0103/PressureTest.git && cd PressureTest
