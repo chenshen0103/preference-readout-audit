@@ -86,7 +86,7 @@ ax.text(-8, 53, "disagree: second-listed won BOTH times (22/22)",
         fontsize=9.5, color=ORANGE, ha="center", va="top", fontweight="bold")
 ax.text(27, -40, "disagree the other way\n(EMPTY — never happens)",
         fontsize=9.5, color=INK2, ha="center")
-ax.set_title("Near indifference, position decides the answer", color=INK)
+ax.set_title("Near indifference, the second-listed option always wins", color=INK)
 ax.legend(frameon=False, fontsize=9, loc="lower left")
 
 # ---- right: the control chain ---------------------------------------------
@@ -106,7 +106,7 @@ bx.text(0.5, -0.44, "random tie-breaks would give 0.5", fontsize=8.5,
 bx.set_yticks(y, [t[0] for t in tests], fontsize=9.5)
 bx.set_xlim(0, 1.02)
 bx.set_xlabel("share choosing the SECOND-listed option")
-bx.set_title("...and it is the position, not the letter", color=INK)
+bx.set_title("The default follows position, not the letter", color=INK)
 bx.invert_yaxis()
 
 fig.tight_layout()
