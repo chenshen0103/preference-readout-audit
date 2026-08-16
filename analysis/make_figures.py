@@ -1,6 +1,7 @@
 """Core figures + tables for the article. Palette: validated default system
 (blue #2a78d6 / orange #eb6834 / aqua #1baf7a fixed order; surface #fcfcfb)."""
 import json
+from collections import defaultdict
 
 import numpy as np
 import matplotlib
@@ -8,6 +9,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 BLUE, ORANGE, AQUA = "#2a78d6", "#eb6834", "#1baf7a"
+YELLOW, MAGENTA = "#eda100", "#e87ba4"
 SURFACE, INK, INK2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#eceae6"
 plt.rcParams.update({
     "figure.facecolor": SURFACE, "axes.facecolor": SURFACE,
@@ -131,3 +133,82 @@ for lo, hi in bands:
     name = f"{lo}–{hi}" if lo != hi else str(lo)
     print(f"| {name} | {cv:.2f} | {t:.2f} | {rr:+.2f} |")
 print("\nchance = 0.56 (class imbalance)")
+
+
+# ================= FIGURE 6: integrated layerwise view ====================
+def load_position_scores(directory, key_fn):
+    scores = np.load(f"analysis/{directory}/probe_scores.npy")
+    meta = json.load(open(f"analysis/{directory}/meta.json"))
+    pairs = defaultdict(dict)
+    for i, item in enumerate(meta):
+        pairs[key_fn(item)][item["order"]] = (i, item["semantic_choice"])
+    return scores, pairs
+
+
+boundary_scores, boundary_pairs = load_position_scores(
+    "boundary", lambda item: ("b", item["paraphrase"], item["social_cost"])
+)
+veto_scores, veto_pairs = load_position_scores(
+    "veto",
+    lambda item: (
+        "v",
+        item["test"],
+        item["framing"],
+        item["ret"],
+        item["cost"],
+    ),
+)
+
+position_rows = {"torn": [], "genuine": []}
+for scores, pairs in (
+    (boundary_scores, boundary_pairs),
+    (veto_scores, veto_pairs),
+):
+    for pair in pairs.values():
+        if len(pair) < 2:
+            continue
+        (orig_i, orig_choice), (swap_i, swap_choice) = pair["orig"], pair["swap"]
+        group = "torn" if orig_choice != swap_choice else "genuine"
+        position_rows[group].append((-scores[orig_i] + scores[swap_i]) / 2)
+
+torn = np.vstack(position_rows["torn"])
+genuine = np.vstack(position_rows["genuine"])
+position_layers = np.arange(28, 58)
+position_diff = np.array([
+    np.nanmean(torn[:, layer]) - np.nanmean(genuine[:, layer])
+    for layer in position_layers
+])
+
+read_xy = np.array([
+    np.mean([record["layers"][layer]["readable"] for record in xy])
+    for layer in range(L)
+])
+margin_corr = np.full(L, np.nan)
+for row in pr:
+    margin_corr[int(row[0])] = row[4]
+position_scaled = np.full(L, np.nan)
+position_scaled[28:58] = position_diff / 1.1
+
+fig, ax = plt.subplots(figsize=(9.2, 4.4))
+ax.axhline(0.56, linestyle=":", color=INK2, linewidth=0.8)
+ax.plot(range(L), tacc, color=BLUE, linewidth=2.4,
+        label="decision: probe transfer accuracy")
+ax.plot(range(L), margin_corr, color=MAGENTA, linewidth=1.6,
+        label="decision: final-margin correlation")
+ax.plot(range(L), position_scaled, color=AQUA, linewidth=2.4,
+        label="position signal (rescaled)")
+ax.plot(range(L), read_xy, color=YELLOW, linewidth=1.6,
+        label="readability X/Y")
+ax.plot(range(L), read_ab, color=ORANGE, linewidth=1.6,
+        label="readability A/B")
+ax.set_xlabel("layer")
+ax.set_ylabel("proportion / rescaled units")
+ax.set_ylim(-0.08, 1.09)
+ax.set_title(
+    "Decision info, position info, and token readability occupy different windows",
+    color=INK,
+)
+ax.legend(frameon=False, fontsize=8.5, loc="upper left", ncol=2)
+fig.tight_layout()
+fig.savefig(f"{FD}/fig6_integrated.png", dpi=170)
+print("fig6 saved")
