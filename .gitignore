@@ -8,3 +8,11 @@ data/raw/
 *.png
 !report/figures/*.png
 .ipynb_checkpoints/
+
+# Raw per-layer residual tensors: 30-120MB each, exceed/bloat GitHub limits.
+# Regenerable from the corresponding analysis/*.py scripts (needs 4x V100 +
+# google/gemma-4-31B-it fp16). All derived results (probe_scores, records,
+# meta, csv) ARE committed.
+analysis/*/residuals.npy
+# bundle folder is derived from the zip (committed) by package_bundle.py
+notebooks/preference_measurement_validity_bundle/
